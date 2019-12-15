@@ -1,0 +1,54 @@
+$colors: (
+  primary: teal,
+  secondary: lighten(teal, 5%)
+);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+
+  form {
+    position: relative;
+    top: 15%;
+
+    select {
+      padding: 12px;
+      border-radius: 5px;
+      background-color: teal;
+      margin-right: 8px;
+      color: aliceblue;
+      width: 200px;
+    }
+
+    option {
+      padding: 8px;
+      background-color: aliceblue;
+      color: teal;
+      font-size: 0.9rem;
+    }
+
+    option:hover {
+      background-color: teal;
+    }
+
+    button {
+      color: aliceblue;
+      padding: 12px;
+      background-color: teal;
+      border: none;
+      border-radius: 5px;
+      width: 100px;
+    }
+
+    button:hover {
+      background-color: map-get($colors, secondary);
+    }
+  }
+}
