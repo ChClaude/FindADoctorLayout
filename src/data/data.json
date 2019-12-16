@@ -1,0 +1,114 @@
+{
+  "doctors": [
+    {
+      "name": "Susane",
+      "speciality": "Paediatrician",
+      "location": "Cape Town"
+    },
+    {
+      "name": "Clark",
+      "speciality": "Paediatrician",
+      "location": "Cape Town"
+    },
+    {
+      "name": "Ken",
+      "speciality": "Dentist",
+      "location": "Cape Town"
+    },
+    {
+      "name": "Ben",
+      "speciality": "General Practitioner",
+      "location": "Cape Town"
+    },
+    {
+      "name": "Loren",
+      "speciality": "Dermatologist",
+      "location": "Cape Town"
+    },
+    {
+      "name": "Lee",
+      "speciality": "Gynaecologist",
+      "location": "Cape Town"
+    },
+    {
+      "name": "Peter",
+      "speciality": "Dermatologist",
+      "location": "Cape Town"
+    },
+    {
+      "name": "James",
+      "speciality": "Opthalmologist",
+      "location": "Cape Town"
+    },
+    {
+      "name": "Paul",
+      "speciality": "Surgeon",
+      "location": "Cape Town"
+    },
+    {
+      "name": "Pedro",
+      "speciality": "Psychologist",
+      "location": "Cape Town"
+    },
+    {
+      "name": "Lionel",
+      "speciality": "Psychiatrist",
+      "location": "Cape Town"
+    },
+    {
+      "name": "Mark",
+      "speciality": "Paediatrician",
+      "location": "Cape Town"
+    },
+    {
+      "name": "Lisa",
+      "speciality": "Paediatrician",
+      "location": "Cape Town"
+    },
+    {
+      "name": "Moses",
+      "speciality": "Dentist",
+      "location": "Cape Town"
+    },
+    {
+      "name": "Eliel",
+      "speciality": "General Practitioner",
+      "location": "Cape Town"
+    },
+    {
+      "name": "Sean",
+      "speciality": "Dermatologist",
+      "location": "Cape Town"
+    },
+    {
+      "name": "Michael",
+      "speciality": "Gynaecologist",
+      "location": "Cape Town"
+    },
+    {
+      "name": "Bell",
+      "speciality": "Dermatologist",
+      "location": "Cape Town"
+    },
+    {
+      "name": "Kim",
+      "speciality": "Opthalmologist",
+      "location": "Cape Town"
+    },
+    {
+      "name": "Xian",
+      "speciality": "Surgeon",
+      "location": "Cape Town"
+    },
+    {
+      "name": "Fernando",
+      "speciality": "Psychologist",
+      "location": "Cape Town"
+    },
+    {
+      "name": "Gallagher",
+      "speciality": "Psychiatrist",
+      "location": "Cape Town"
+    }
+  ]
+}
