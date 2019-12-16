@@ -10,7 +10,7 @@ class Doctor extends Component {
                 <h3>{this.props.doctor.name}</h3>
                 <span style={{display: "block"}}>{this.props.doctor.speciality}</span>
                 <button
-                    onClick={() => this.props.handleBookNowClick(this.props.doctor)}
+                    onClick={() => this.props.handleBookNowClick(this.props)}
                 >Book now
                 </button>
             </div>

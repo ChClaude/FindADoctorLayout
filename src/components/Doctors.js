@@ -8,7 +8,7 @@ class Doctors extends Component {
         return (
             <div className="container doctors">
                 {this.props.doctors.map( doctor =>
-                    <Doctor doctor={doctor} key={doctor.name.concat(doctor.speciality)} handleBookNowClick={this.props.handleBookNowClick}/>
+                    <Doctor doctor={doctor} key={doctor.name.concat(doctor.speciality)} handleBookNowClick={this.props.handleBookNowClick} {...this.props}/>
                 )}
             </div>
         );

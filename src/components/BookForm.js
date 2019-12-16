@@ -20,7 +20,10 @@ class BookForm extends Component {
                 <div className="card">
                     <h2 className="text-center">Schedule an Appointment</h2>
                     <p className="text-center">Please enter your details before scheduling your appointment</p>
-                    <form onSubmit={(e)=> this.props.handleOnSubmitPatient(e, this.state)}>
+                    <form onSubmit={(e)=> {
+                        e.preventDefault();
+                        this.props.handleOnSubmitPatient(this.state, this.props.history);
+                    }}>
                         <label htmlFor="name">Name</label>
                         <input type="text" name="name" id="name" value={this.state.name} onChange={this.handleOnChange}/>
                         <label htmlFor="surname">Surname</label>
@@ -38,7 +41,7 @@ class BookForm extends Component {
     }
 }
 
-BookForm.protoType = {
+BookForm.protoTypes = {
     handleOnSubmitPatient: PropTypes.func.isRequired
 };
 

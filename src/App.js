@@ -30,36 +30,41 @@ class App extends Component {
         this.setState({location, speciality, doctors});
     };
 
-    handleBookNowClick = (doctor) => {
+    handleBookNowClick = ({doctor, history}) => {
         this.setState({doctor});
-        console.log(doctor);
+        history.push('/booking_details');
     };
 
-    handleOnSubmitPatient = (e, {name, surname, contactNumber, email}) => {
+    handleOnSubmitPatient = ({name, surname, contactNumber, email}, history) => {
         let patient = {name, surname, contactNumber, email};
         this.setState({patient});
-        e.preventDefault();
+        history.push('/booking_details2');
     };
 
-    handleBook = ({facility, date, time}) => {
+    handleBook = ({facility, date, time}, history) => {
         this.setState({facility, date, time});
-        let booking = this.state;
+        const {doctor, location, speciality, patient} = this.state;
+        let booking = {doctor, location, speciality, patient, facility, date, time};
         console.log(booking);
+        history.replace('/');
     };
 
     render() {
         return (
             <Router>
                 <Switch>
-                    <Route exact path="/" render={() =>
+                    <Route exact path="/" render={(props) =>
                         <main className="container">
-                            <Form handleOnSubmit={this.handleOnSubmit}/>
-                            <Doctors doctors={this.state.doctors} handleBookNowClick={this.handleBookNowClick}/>
+                            <Form handleOnSubmit={this.handleOnSubmit} {...props} />
+                            <Doctors doctors={this.state.doctors}
+                                     handleBookNowClick={this.handleBookNowClick} {...props} />
                         </main>
                     }/>
-                    <Route exact path="/booking_details" component={BookForm}/>
-                    <Route exact path="/booking_details2" render={ () =>
-                        <BookForm2 handleBook={this.handleBook}/>
+                    <Route exact path="/booking_details"
+                           render={(props) => <BookForm {...props} handleOnSubmitPatient={this.handleOnSubmitPatient}/>
+                           }/>
+                    <Route exact path="/booking_details2" render={(props) =>
+                        <BookForm2 handleBook={this.handleBook} {...props} />
                     }/>
                 </Switch>
             </Router>

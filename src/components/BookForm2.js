@@ -74,7 +74,7 @@ class BookForm2 extends Component {
                                 >{time}
                                 </span>)}
                         </div>
-                        <button onClick={() => this.props.handleBook(this.state)}>Book</button>
+                        <button onClick={() => this.props.handleBook(this.state, this.props.history)}>Book</button>
                     </div>
                 </div>
             </div>
