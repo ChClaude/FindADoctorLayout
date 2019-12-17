@@ -182,6 +182,68 @@ main form button:hover {
   color: #009a9a;
 }
 
+.booking-confirmation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.booking-confirmation .card {
+  width: 50%;
+  height: 550px;
+  padding-top: 10px;
+}
+.booking-confirmation .btn-box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+.booking-confirmation .details-box {
+  margin-top: 8px;
+  margin-bottom: 5px;
+}
+.booking-confirmation .details-box span:first-child {
+  font-weight: bold;
+  margin-right: 10px;
+}
+.booking-confirmation hr {
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+
+.danger {
+  box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.13);
+  width: 50%;
+  height: 70px;
+  padding: 16px;
+  font-size: 1.5rem;
+  overflow: hidden;
+}
+.danger .btn {
+  float: right;
+}
+
+.text-accentuate {
+  font-weight: bolder;
+  color: teal;
+}
+
+.btn {
+  display: block;
+  font-size: 1rem;
+  width: 120px;
+  border: none;
+  border-radius: 5px;
+  background-color: teal;
+  color: white;
+  padding: 9px 16px;
+  margin-right: auto;
+}
+
+.btn:hover {
+  background-color: #009a9a;
+}
+
 .hide {
   display: none;
 }

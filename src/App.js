@@ -9,6 +9,7 @@ import Doctors from "./components/Doctors";
 import data from "./data/data";
 import BookForm from "./components/BookForm";
 import BookForm2 from "./components/BookForm2";
+import BookingCard from "./components/BookingCard";
 
 library.add(fab, faUserNurse, faSearch);
 
@@ -24,6 +25,8 @@ class App extends Component {
         date: '',
         time: ''
     };
+
+    booking = {};
 
     handleOnSubmit = (location, speciality) => {
         let doctors = data.doctors.filter(doctor => doctor.speciality === speciality);
@@ -43,10 +46,10 @@ class App extends Component {
 
     handleBook = ({facility, date, time}, history) => {
         this.setState({facility, date, time});
-        const {doctor, location, speciality, patient} = this.state;
-        let booking = {doctor, location, speciality, patient, facility, date, time};
-        console.log(booking);
-        history.replace('/');
+        const {doctor, patient} = this.state;
+        this.booking = {doctor, patient, facility, date, time};
+        console.log(this.booking);
+        history.replace('/booking_confirmation');
     };
 
     render() {
@@ -66,6 +69,7 @@ class App extends Component {
                     <Route exact path="/booking_details2" render={(props) =>
                         <BookForm2 handleBook={this.handleBook} {...props} />
                     }/>
+                    <Route exact path="/booking_confirmation" render={(props) => <BookingCard booking={this.booking} {...props} />}/>
                 </Switch>
             </Router>
         );

@@ -19,11 +19,19 @@
       "name": "Ben",
       "speciality": "General Practitioner",
       "location": "Cape Town"
+    }, {
+      "name": "Peng Nee",
+      "speciality": "General Practitioner",
+      "location": "Wellington"
     },
     {
       "name": "Loren",
       "speciality": "Dermatologist",
       "location": "Cape Town"
+    },{
+      "name": "Roxan",
+      "speciality": "General Practitioner",
+      "location": "Durban"
     },
     {
       "name": "Lee",
@@ -59,6 +67,10 @@
       "name": "Mark",
       "speciality": "Paediatrician",
       "location": "Cape Town"
+    },{
+      "name": "Remi",
+      "speciality": "General Practitioner",
+      "location": "Alice"
     },
     {
       "name": "Lisa",
@@ -84,6 +96,10 @@
       "name": "Michael",
       "speciality": "Gynaecologist",
       "location": "Cape Town"
+    },{
+      "name": "Quan",
+      "speciality": "General Practitioner",
+      "location": "Pretoria"
     },
     {
       "name": "Bell",
@@ -94,6 +110,10 @@
       "name": "Kim",
       "speciality": "Opthalmologist",
       "location": "Cape Town"
+    }, {
+      "name": "Tessi",
+      "speciality": "General Practitioner",
+      "location": "Johannesburg"
     },
     {
       "name": "Xian",
@@ -109,6 +129,116 @@
       "name": "Gallagher",
       "speciality": "Psychiatrist",
       "location": "Cape Town"
+    }, {
+      "name": "Uriel",
+      "speciality": "Paediatrician",
+      "location": "Alice"
+    },
+    {
+      "name": "Ron",
+      "speciality": "Paediatrician",
+      "location": "Queen's Town"
+    },
+    {
+      "name": "Harry",
+      "speciality": "Dentist",
+      "location": "Johannesburg"
+    },
+    {
+      "name": "Garry",
+      "speciality": "Paediatrician",
+      "location": "Cape Town"
+    },
+    {
+      "name": "Lorenzo",
+      "speciality": "Dentist",
+      "location": "Wellington"
+    },
+    {
+      "name": "Billy",
+      "speciality": "Gynaecologist",
+      "location": "Wellington"
+    },
+    {
+      "name": "Pierre",
+      "speciality": "Gynaecologist",
+      "location": "Queen's Town"
+    },
+    {
+      "name": "Rossini",
+      "speciality": "Opthalmologist",
+      "location": "Queen's Town"
+    },
+    {
+      "name": "Wuan",
+      "speciality": "Surgeon",
+      "location": "Port Elizabeth"
+    },
+    {
+      "name": "Pedro Leon ",
+      "speciality": "Surgeon",
+      "location": "Pretoria"
+    },
+    {
+      "name": "Armel",
+      "speciality": "Psychiatrist",
+      "location": "Johannesburg"
+    },
+    {
+      "name": "Joram",
+      "speciality": "Paediatrician",
+      "location": "Alice"
+    },
+    {
+      "name": "Lian Kun",
+      "speciality": "Paediatrician",
+      "location": "Durban"
+    },
+    {
+      "name": " Mark Kemps",
+      "speciality": "Dentist",
+      "location": "Wellington"
+    },
+    {
+      "name": "Marrion",
+      "speciality": "Dermatologist",
+      "location": "Queen's Town"
+    },
+    {
+      "name": "Keziah",
+      "speciality": "Dermatologist",
+      "location": "Wellington"
+    },
+    {
+      "name": "Michaela",
+      "speciality": "General Practitioner",
+      "location": "Pretoria"
+    },
+    {
+      "name": "Mary Line",
+      "speciality": "Dermatologist",
+      "location": "Cape Town"
+    },
+    {
+      "name": "Paola",
+      "speciality": "Opthalmologist",
+      "location": "Johannesburg"
+    },
+    {
+      "name": "Lloris",
+      "speciality": "Surgeon",
+      "location": "Alice"
+    },
+    {
+      "name": "Germain",
+      "speciality": "Psychologist",
+      "location": "Durban"
+    },
+    {
+      "name": "Kendra",
+      "speciality": "Psychiatrist",
+      "location": "Johannesburg"
     }
+
   ]
 }
