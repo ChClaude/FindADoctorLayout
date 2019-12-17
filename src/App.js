@@ -52,6 +52,20 @@ class App extends Component {
         history.replace('/booking_confirmation');
     };
 
+    handleConfirmBooking = (history) => {
+        this.setState({
+            doctors: [],
+            doctor: {},
+            location: '',
+            speciality: '',
+            patient: {},
+            facility: '',
+            date: '',
+            time: ''
+        });
+        history.replace('/');
+    };
+
     render() {
         return (
             <Router>
@@ -69,7 +83,9 @@ class App extends Component {
                     <Route exact path="/booking_details2" render={(props) =>
                         <BookForm2 handleBook={this.handleBook} {...props} />
                     }/>
-                    <Route exact path="/booking_confirmation" render={(props) => <BookingCard booking={this.booking} {...props} />}/>
+                    <Route exact path="/booking_confirmation"
+                           render={(props) => <BookingCard booking={this.booking} {...props}
+                                                           handleConfirmBooking={this.handleConfirmBooking}/>}/>
                 </Switch>
             </Router>
         );

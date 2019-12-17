@@ -3,10 +3,6 @@ import PropTypes from "prop-types";
 
 class BookingCard extends Component {
 
-    handleConfirmBooking = () => {
-        this.props.history.replace('/');
-    };
-
     render() {
         const {booking} = this.props;
         console.log(booking);
@@ -30,7 +26,7 @@ class BookingCard extends Component {
                         <div className="details-box"><span>Date:</span> <span className="text-accentuate">{date}</span></div>
                         <div className="details-box"><span>Time:</span> <span className="text-accentuate">{time}</span></div>
                         <div className="btn-box">
-                            <button className="btn" onClick={this.handleConfirmBooking}>OK</button>
+                            <button className="btn" onClick={() => this.props.handleConfirmBooking(this.props.history)}>OK</button>
                             <button className="btn">Cancel</button>
                         </div>
                     </div> :
@@ -45,7 +41,8 @@ class BookingCard extends Component {
 }
 
 BookingCard.propTypes = {
-    booking: PropTypes.object.isRequired
+    booking: PropTypes.object.isRequired,
+    handleConfirmBooking: PropTypes.func.isRequired
 };
 
 export default BookingCard;
