@@ -27,12 +27,12 @@ class BookingCard extends Component {
                         <div className="details-box"><span>Time:</span> <span className="text-accentuate">{time}</span></div>
                         <div className="btn-box">
                             <button className="btn" onClick={() => this.props.handleConfirmBooking(this.props.history)}>OK</button>
-                            <button className="btn">Cancel</button>
+                            <button className="btn" onClick={() => this.props.handleConfirmBooking(this.props.history)}>Cancel</button>
                         </div>
                     </div> :
                     <div className="danger">
                         No Booking Specified
-                        <button className="btn">Book</button>
+                        <button className="btn" onClick={() => this.props.handleConfirmBooking(this.props.history)}>Book</button>
                     </div>
                 }
             </div>
